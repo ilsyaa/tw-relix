@@ -1,6 +1,6 @@
 {
 	"name": "tw-relix",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Relix UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework.",
 	"main": "index.js",
 	"repository": "https://github.com/ilsyaa/tw-relix.git",

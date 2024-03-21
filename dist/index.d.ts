@@ -647,23 +647,6 @@ export declare class HSTabs extends HSBasePlugin<{}> implements ITabs {
 	static onStartEnd(isOpposite?: boolean): void;
 	static on(evt: string, target: HTMLElement, cb: Function): void;
 }
-export interface IThemeSwitchOptions {
-	theme?: "dark" | "light" | "default";
-}
-export interface IThemeSwitch {
-	options?: IThemeSwitchOptions;
-	setAppearance(theme: string, isSaveToLocalStorage: boolean, isSetDispatchEvent: boolean): void;
-}
-export declare class HSThemeSwitch extends HSBasePlugin<IThemeSwitchOptions> implements IThemeSwitch {
-	theme: string;
-	private readonly themeSet;
-	constructor(el: HTMLElement, options?: IThemeSwitchOptions);
-	private init;
-	private setResetStyles;
-	setAppearance(theme?: string, isSaveToLocalStorage?: boolean, isSetDispatchEvent?: boolean): void;
-	static getInstance(target: HTMLElement | string): HSThemeSwitch;
-	static autoInit(): void;
-}
 export interface IToggleCountOptions {
 	target: string | HTMLInputElement;
 	min: number;

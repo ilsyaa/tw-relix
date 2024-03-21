@@ -13,7 +13,6 @@ export { default as HSSelect } from './plugins/select';
 export { default as HSStepper } from './plugins/stepper';
 export { default as HSStrongPassword } from './plugins/strong-password';
 export { default as HSTabs } from './plugins/tabs';
-// export { default as HSThemeSwitch } from './plugins/theme-switch';
 export { default as HSToggleCount } from './plugins/toggle-count';
 export { default as HSTogglePassword } from './plugins/toggle-password';
 export { default as HSTooltip } from './plugins/tooltip';

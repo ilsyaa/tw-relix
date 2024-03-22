@@ -14,6 +14,7 @@ import {
 
 import { IOverlayOptions, IOverlay } from './interfaces';
 import { ICollectionItem } from '../../interfaces';
+import ScrollbarHelper from '../../utils/scrollbar';
 
 import HSBasePlugin from '../base-plugin';
 
@@ -217,7 +218,7 @@ class HSOverlay extends HSBasePlugin<{}> implements IOverlay {
 		}
 
 		if (disabledScroll) {
-			document.body.style.overflow = 'hidden';
+			new ScrollbarHelper().hide();
 		}
 
 		this.buildBackdrop();
@@ -258,7 +259,7 @@ class HSOverlay extends HSBasePlugin<{}> implements IOverlay {
 				this.fireEvent('close', this.el);
 				dispatch('close.hs.overlay', this.el, this.el);
 
-				document.body.style.overflow = '';
+				new ScrollbarHelper().reset();
 
 				resolve(this.overlay);
 			});

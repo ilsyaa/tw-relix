@@ -9,6 +9,7 @@ module.exports = {
 		'accordion': './src/plugins/accordion/index.ts',
 		'carousel': './src/plugins/carousel/index.ts',
 		'collapse': './src/plugins/collapse/index.ts',
+		'button-ripple': './src/plugins/button-ripple/index.ts',
 		'copy-markup': './src/plugins/copy-markup/index.ts',
 		'dropdown': './src/plugins/dropdown/index.ts',
 		'input-number': './src/plugins/input-number/index.ts',

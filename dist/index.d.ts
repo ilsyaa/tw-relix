@@ -43,6 +43,17 @@ export declare class HSCopyMarkup extends HSBasePlugin<ICopyMarkupOptions> imple
 	static getInstance(target: HTMLElement | string, isInstance?: boolean): HSCopyMarkup | ICollectionItem<HSCopyMarkup>;
 	static autoInit(): void;
 }
+export declare class HSButtonRipple extends HSBasePlugin<{}> {
+	private rippleWrapper;
+	constructor(el: HTMLElement);
+	private init;
+	private event;
+	private createEffectRipple;
+	private createWrapperRippleElement;
+	private setDefaultStyles;
+	static getInstance(target: HTMLElement, isInstance?: boolean): HTMLElement | ICollectionItem<HSButtonRipple>;
+	static autoInit(): void;
+}
 export interface IAccordion {
 	options?: {};
 	show(): void;

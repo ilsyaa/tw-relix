@@ -437,4 +437,10 @@ module.exports = plugin(function ({ addVariant, e }) {
 			return `.theme-auto .${e(`hs-auto-active${separator}${className}`)}`;
 		});
 	});
+
+	addVariant('hs-ripple', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.hs-ripple${e(`${separator}${className}`)} .hs-ripple span`;
+        });
+    });
 });

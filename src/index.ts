@@ -1,4 +1,5 @@
 export { default as HSCopyMarkup } from './plugins/copy-markup';
+export { default as HSButtonRipple } from './plugins/button-ripple';
 export { default as HSAccordion } from './plugins/accordion';
 export { default as HSCarousel } from './plugins/carousel';
 export { default as HSCollapse } from './plugins/collapse';

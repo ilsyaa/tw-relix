@@ -17,12 +17,14 @@ import HSTabs from '../plugins/tabs';
 import HSToggleCount from '../plugins/toggle-count';
 import HSTogglePassword from '../plugins/toggle-password';
 import HSTooltip from '../plugins/tooltip';
+import HSButtonRipple from '../plugins/button-ripple';
 
 export const COLLECTIONS: ISpaCollectionItem[] = [
 	{ key: 'copy-markup', fn: HSCopyMarkup },
 	{ key: 'accordion', fn: HSAccordion },
 	{ key: 'carousel', fn: HSCarousel },
 	{ key: 'collapse', fn: HSCollapse },
+	{ key: 'button-ripple', fn: HSButtonRipple },
 	{ key: 'dropdown', fn: HSDropdown },
 	{ key: 'input-number', fn: HSInputNumber },
 	{ key: 'overlay', fn: HSOverlay },
